@@ -10,13 +10,14 @@ import android.view.View;
 import android.view.Window;
 
 import com.zhangysh.project.chat.App;
+import com.zhangysh.project.chat.inter.NetInter;
 import com.zhangysh.project.chat.util.AutoLayoutUtils;
 import com.zhangysh.project.chat.util.LogUtil;
 
 /**
  * Created by zys on 2016/7/29 0029.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity implements NetInter{
 
     @Override
     public void onCreate(Bundle save){
