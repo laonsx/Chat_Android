@@ -1,5 +1,6 @@
 package com.zhangysh.project.chat.activity;
 
+import com.zhangysh.project.chat.R;
 import com.zhangysh.project.chat.activity.base.BaseUiActivity;
 
 /**
@@ -9,7 +10,7 @@ public class UiActivity extends BaseUiActivity{
 
     @Override
     public void setContentView() {
-
+        setContentView(R.layout.ui_activity);
     }
 
     @Override

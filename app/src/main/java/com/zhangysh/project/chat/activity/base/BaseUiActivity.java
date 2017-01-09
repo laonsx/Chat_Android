@@ -29,4 +29,15 @@ public abstract class BaseUiActivity extends BaseActivity {
         return true;
     }
 
+    private long lastClickTime;
+
+    public boolean isFastDoubleClick() {
+        long time = System.currentTimeMillis();
+        long timeD = time - lastClickTime;
+        if (0 < timeD && timeD < 2345) {
+            return true;
+        }
+        lastClickTime = time;
+        return false;
+    }
 }
