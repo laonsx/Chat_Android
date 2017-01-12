@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="116px">
+    <LinearLayout
+        android:id="@+id/titlebarleft"
+        android:visibility="gone"
+        android:layout_width="120px"
+        android:onClick="onEndActivity"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="26px"
+        android:layout_height="46px"
+        android:background="@mipmap/fanhui"
+        android:layout_marginLeft="40px"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:text="一修管家"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlebarcenter"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="48px"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/titlebarright"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentRight="true"
+        android:paddingRight="40px"
+        android:gravity="center_vertical"
+        android:textSize="42px"
+        android:textColor="#333333"
+        />
+
+</RelativeLayout>

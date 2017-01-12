@@ -2,21 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="116px">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="60px"
-            android:text="30000"
-            android:layout_centerVertical="true"
-            android:id="@+id/titlebarcenter"
-            android:gravity="center"
-            android:textSize="48px"
-            android:layout_centerHorizontal="true"
-            />
-    </RelativeLayout>
+    <include layout="@layout/title"/>
+
     <LinearLayout
         android:id="@+id/fragment"
         android:layout_width="match_parent"
@@ -75,7 +62,7 @@
                 android:textSize="30px"
                 android:textColor="@color/color_bottomtitle"
                 android:padding="6px"
-                android:text="订单"/>
+                android:text="列表"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/kefu"
