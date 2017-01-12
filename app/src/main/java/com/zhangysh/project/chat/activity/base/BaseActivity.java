@@ -38,6 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity implements NetInter
 //    public RxPermissions rxPermissions;
     private void initView() {
         setContentView();
+        AutoLayoutUtils.auto(this);
         findViewById();
         setListener();
     }
