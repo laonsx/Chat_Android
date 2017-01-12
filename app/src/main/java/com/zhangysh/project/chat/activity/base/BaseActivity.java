@@ -14,6 +14,8 @@ import com.zhangysh.project.chat.inter.NetInter;
 import com.zhangysh.project.chat.util.AutoLayoutUtils;
 import com.zhangysh.project.chat.util.LogUtil;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by zys on 2016/7/29 0029.
  */
@@ -39,6 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity implements NetInter
     private void initView() {
         setContentView();
         AutoLayoutUtils.auto(this);
+        ButterKnife.bind(this);
         findViewById();
         setListener();
     }
