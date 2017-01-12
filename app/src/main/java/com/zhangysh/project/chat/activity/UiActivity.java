@@ -75,7 +75,6 @@ public class UiActivity extends BaseUiActivity {
                 mTransaction.hide(mFragment);
                 mType++;
                 getOrderFragment(mType % 2);
-                LogUtil.e("mType:" + mType);
                 if (mType == 1) {
                     mTransaction.add(R.id.fragment, mOrderChangeFragment);
                 } else {
@@ -97,7 +96,6 @@ public class UiActivity extends BaseUiActivity {
                 }
                 mOrderChangeFragment = mUserOrderFragment;
                 titlebarright.setText("个人");
-                LogUtil.e("个人:" + mType);
                 return mOrderChangeFragment;
             case 1:
                 if (shifudingdan == null) {
@@ -107,7 +105,6 @@ public class UiActivity extends BaseUiActivity {
             default:
                 mOrderChangeFragment = shifudingdan;
                 titlebarright.setText("群组");
-                LogUtil.e("群组:" + mType);
                 return mOrderChangeFragment;
         }
     }
