@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#cccccc"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/Uname"
+        android:layout_width="700px"
+        android:layout_height="200px"
+        android:background="#dddddd"
+        android:hint="用户名"
+        />
+    <EditText
+        android:id="@+id/Utel"
+        android:layout_width="700px"
+        android:layout_height="200px"
+        android:hint="手机号"
+        android:background="#dddddd"
+        android:layout_below="@id/Uname"
+        />
+    <EditText
+        android:id="@+id/Ucode"
+        android:layout_width="700px"
+        android:layout_height="200px"
+        android:background="#dddddd"
+        android:hint="短信验证码"
+        android:layout_below="@id/Utel"
+        />
+    <TextView
+        android:id="@+id/Ulogin"
+        android:layout_width="700px"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:layout_below="@id/Ucode"
+        android:text="注册并登录"/>
+</RelativeLayout>

@@ -14,7 +14,6 @@ import com.zhangysh.project.chat.fragment.GlobalChatFragment;
 import com.zhangysh.project.chat.fragment.GroupChatFragment;
 import com.zhangysh.project.chat.fragment.MyFragment;
 import com.zhangysh.project.chat.fragment.base.BaseFragement;
-import com.zhangysh.project.chat.util.LogUtil;
 
 import butterknife.Bind;
 import butterknife.OnClick;
