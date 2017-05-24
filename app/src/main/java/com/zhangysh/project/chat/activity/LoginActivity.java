@@ -14,7 +14,7 @@ public class LoginActivity extends BaseUiActivity {
 
     @Override
     public void findViewById() {
-
+        int a;
     }
 
     @Override
